@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+
 </script>
 <template>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -26,7 +27,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
 </nav>
 <header>
-  <h1>Home</h1>
+  <h1>Aigua</h1>
 </header>
 </template>
 <style scoped>
