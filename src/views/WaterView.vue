@@ -1,6 +1,7 @@
 <script setup>
 import { watch } from 'vue'
 import UseEmabassaments from '../composables/UseEmbassaments'
+import { RouterLink } from 'vue-router'
 
 const { data, loading, error, embassaments, getData, getEmbassamentFromData } = UseEmabassaments()
 
@@ -21,7 +22,9 @@ watch(data, (newData) => {
   <div v-else-if="error">{{ error }}</div>
   <div v-else class="container">
     <ul class="list-group" v-for="embassament in embassaments" :key="embassament">
-      <li class="list-group-item list-group-item-action list-group-item-primary mt-2">{{ embassament }}</li>
+      <li class="list-group-item list-group-item-action list-group-item-primary mt-2">
+        <RouterLink :to="`water/${embassament}`">{{ embassament }}</RouterLink>
+      </li>
     </ul>
   </div>
 </template>

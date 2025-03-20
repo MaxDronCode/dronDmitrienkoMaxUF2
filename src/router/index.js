@@ -18,6 +18,12 @@ const router = createRouter({
       path: '/cart',
       name: 'cart',
       component: () => import('../views/CartView.vue'),
+    },
+    {
+      path: '/water/:detail',
+      name: 'detail',
+      component: () => import('../views/EmbassamentDetailView.vue'),
+      props: route => ({ detail:route.params.detail }),
     }
   ],
 })
