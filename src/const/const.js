@@ -1,0 +1,1 @@
+export const URL = " https://analisi.transparenciacatalunya.cat/resource/gn9e-3qhr.json"
