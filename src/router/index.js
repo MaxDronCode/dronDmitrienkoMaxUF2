@@ -10,10 +10,15 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/aigua',
-      name: 'aigua',
-      component: () => import('../views/AboutView.vue'),
+      path: '/water',
+      name: 'water',
+      component: () => import('../views/WaterView.vue'),
     },
+    {
+      path: '/cart',
+      name: 'cart',
+      component: () => import('../views/CartView.vue'),
+    }
   ],
 })
 
